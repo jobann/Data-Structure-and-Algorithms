@@ -3,9 +3,17 @@
 
 #include <iostream>
 
-int main()
-{
-    std::cout << "Hello World!\n";
+
+void fun(int x) {
+	if (x > 0) {
+		printf("%d ", x);
+		fun(x - 1);
+	}
+}
+
+int main(){
+	int x = 3;
+	fun(x);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
